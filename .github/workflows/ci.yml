@@ -2,6 +2,11 @@ name: Boutique CI Pipeline
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'gitops/k8s/**'
 
 env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
