@@ -5,8 +5,6 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - 'gitops/k8s/**'
 
 env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
